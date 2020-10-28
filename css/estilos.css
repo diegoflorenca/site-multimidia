@@ -1,0 +1,86 @@
+:root {
+  --principal: #000000;
+  --secondaria: #fdcd07;
+  --branco: #ffffff;
+  --fundo: #f4f4f4;
+  --cinza: #4c4c4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  color: var(--principal);
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#envelope {
+  max-width: 80vw;
+  margin-left: 10vw;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+header #logo {
+  width: 180px;
+}
+
+#logo h1 {
+  font-family: 'Sansita', sans-serif;
+  font-size: 2.5em;
+}
+
+#logo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: right;
+}
+
+header nav a {
+  font-size: 1.2em;
+  text-decoration: none;
+  margin: 0.5em;
+  color: var(--principal);
+}
+
+a.destaque {
+  color: var(--branco);
+  background: var(--principal);
+  padding: 0.8em;
+  border-radius: 0.5em;
+  transition: color 300ms ease-in-out;
+}
+
+a.destaque:hover {
+  color: var(--principal);
+  padding: calc(0.8em - 2px);
+  border: solid 2px var(--principal);
+  background: var(--secondaria);
+}
+
+/* 
+FONTES USADAS NO PROJETO:
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sansita', sans-serif;
+*/
+
+/*
+SOMBRA
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+*/
