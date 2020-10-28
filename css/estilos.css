@@ -30,6 +30,7 @@ body {
 }
 
 header {
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,6 +61,7 @@ header nav a {
 
 a.destaque {
   color: var(--branco);
+  text-decoration: none;
   background: var(--principal);
   padding: 0.8em;
   border-radius: 0.5em;
@@ -73,6 +75,21 @@ a.destaque:hover {
   background: var(--secondaria);
 }
 
+.trabalhos {
+  height: 80vh;
+  padding-top: 5vh;
+}
+
+#carrossel {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  border-radius: 1em;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+
+  background: url('../img/carrossel.jpg');
+  background-size: cover;
+}
 /* 
 FONTES USADAS NO PROJETO:
 font-family: 'Montserrat', sans-serif;
