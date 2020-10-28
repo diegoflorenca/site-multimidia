@@ -21,6 +21,7 @@ body {
   color: var(--principal);
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
+  background: var(--fundo);
 }
 
 #envelope {
@@ -90,6 +91,59 @@ a.destaque:hover {
   background: url('../img/carrossel.jpg');
   background-size: cover;
 }
+
+#depoimentos {
+  height: 45vh;
+  padding: 2em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.depoimento {
+  width: 350px;
+  background: var(--branco);
+  border-radius: 1em;
+  position: relative;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.depoimento img {
+  width: 175px;
+  height: 175px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.depoimento p {
+  text-align: justify;
+  margin-top: 80px;
+  padding: 1em;
+  line-height: 2em;
+}
+
+.dados-aluno {
+  background: var(--secondaria);
+  border-radius: 0em 0em 1em 1em;
+}
+.dados-aluno h3 {
+  font-family: 'Sansita', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dados-aluno h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* 
 FONTES USADAS NO PROJETO:
 font-family: 'Montserrat', sans-serif;
